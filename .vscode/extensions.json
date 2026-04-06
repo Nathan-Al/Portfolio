@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    "Vue.volar",
+    "vitest.explorer",
+    "dbaeumer.vscode-eslint",
+    "EditorConfig.EditorConfig",
+    "oxc.oxc-vscode"
+  ],
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "tailwindCSS.classAttributes": ["class", "ui"],
+  "tailwindCSS.classFunctions": ["defineAppConfig"]
+}
