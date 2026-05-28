@@ -1,0 +1,87 @@
+$anthracite : #1e1e1e;
+
+.div-infos {
+  background-color: $anthracite;
+  padding-top: 0%;
+  padding-bottom: 5%;
+  overflow: auto;
+
+  .profil-photo {
+    width: 50%;
+  }
+
+  .div-icon {
+    background-color: white;
+    span {
+      width: auto;
+      height: 2em;
+    }
+  }
+
+  .div-decoration-box-shadow {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 10px 4px #00000047 inset;
+    position: absolute;
+  }
+}
+.div-slider {
+  height: 5%;
+  display: flex;
+  .slider {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    > * {
+      flex: 0 0 100%;
+    }
+  }
+}
+
+.slide-track {
+  height: 100%;
+  will-change: transform;
+  animation: scrolling 10s linear infinite;
+}
+
+.slide {
+  width: 3cm;
+  align-items: center;
+}
+
+@keyframes icon-slide {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (min-width: 769px) {
+  .div-infos {
+    height: 92vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider {
+    height: 5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider {
+    height: 2em;
+  }
+}

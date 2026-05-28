@@ -1,0 +1,14 @@
+$anthracite : #1e1e1e;
+
+#main-div-navbar-view {
+  background-color: $anthracite;
+  height: 100%;
+}
+
+@media (min-width: 769px) {
+  .main-tab-content {
+    overflow:scroll;
+    overflow-x:hidden;
+    height: 80vh;
+  }
+}
