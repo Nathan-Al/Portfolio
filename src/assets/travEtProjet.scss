@@ -4,4 +4,9 @@
       min-height: 10cm;
     }
   }
+  .modal {
+    .modal-content {
+          max-width: 90vw !important;
+    }
+  }
 }

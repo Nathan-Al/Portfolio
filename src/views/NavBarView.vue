@@ -34,7 +34,6 @@
       data() {
           return {
               activeTab: 0,
-              showBooks: false,
           };
       },
   });
