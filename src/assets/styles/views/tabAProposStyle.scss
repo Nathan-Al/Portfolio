@@ -1,0 +1,15 @@
+#main-div-view-a-propos {
+  height: 100%;
+
+  .columns {
+    .column {
+      div {
+        margin-bottom: 0.5rem;
+
+        dd {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}

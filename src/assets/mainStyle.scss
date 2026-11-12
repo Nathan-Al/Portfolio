@@ -1,0 +1,90 @@
+$purple: #8a4d76;
+$pink: #fa7c91;
+$brown: #757763;
+$beige-light: #d0d1cd;
+$beige-lighter: #eff0eb;
+$anthracite : #1e1e1e;
+
+#app {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0 auto;
+  font-weight: normal;
+  background-color: #1e2528;
+
+  div {
+    scrollbar-color: #f7f10f #ffffff03;
+    scrollbar-width: thin;
+  }
+
+  #main-div-main-view {
+    max-height: 100vh;
+    overflow: hidden;
+
+    .div-decoration-lumiere {
+      height: 6vh;
+      width: 100%;
+      position: relative;
+      background-image: linear-gradient(to bottom, #e9e9e9, #e5e5e5, #ffffff);
+      -webkit-box-shadow: 0px 9px 10px 2px rgba(251, 251, 251, 39%);
+      -moz-box-shadow: 0px 9px 10px 2px rgba(251, 251, 251, 39%);
+      box-shadow: 0px 9px 10px 2px rgba(251, 251, 251, 39%);
+    }
+
+    .div-columns-content {
+      height: 95vh;
+    }
+
+    #main-div-navbar-view {
+      background-color: $anthracite;
+      height: 88vh;
+
+      .b-tabs {
+        height: 100%;
+        overflow: hidden;
+
+        .tab-content {
+          height: 95%;
+          overflow-y: scroll;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 769px) {
+    #main-div-main-view {
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+  }
+}
+
+.divider {
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+  &.is-green {
+    border: solid 1px #c5e471;
+  }
+
+  &.is-yellow {
+    border: solid 1px #ffd700;
+  }
+}
+
+.divider-vertical {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 100%;
+
+  &.is-green {
+    border: solid 1px #c5e471;
+  }
+
+  &.is-yellow {
+    border: solid 1px #ffd700;
+  }
+}
+
+@import url('./baseStyle.css');
+@import url('./infosComponentStyle.scss');

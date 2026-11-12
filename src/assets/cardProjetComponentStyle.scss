@@ -1,0 +1,25 @@
+#main-card-projet-component {
+  height: 100%;
+
+  .cell {
+    min-height: 10cm;
+    max-height: 15cm;
+    height: 100%;
+
+    .box {
+      height: 100%;
+
+      .div-card-image {
+        display: block;
+      }
+
+      .div-card-content {
+        display: block;
+      }
+
+      .div-card-icons {
+        display: block;
+      }
+    }
+  }
+}
