@@ -1,0 +1,16 @@
+#div-view-tav-et-proj {
+  .card-project-style {
+    cursor: pointer;
+  }
+
+  .card-project-style:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  }
+
+  .modal {
+    .modal-content {
+      max-width: 90vw !important;
+    }
+  }
+}

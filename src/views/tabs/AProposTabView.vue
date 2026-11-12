@@ -1,7 +1,7 @@
 <template>
   <div id="main-div-view-a-propos" class="content is-normal">
     <div class="columns">
-      <div class="column">
+      <div class="column pb-0">
         <div class="is-flex">
           <b-icon pack="fa-solid" type="is-white" icon="school-flag"></b-icon>
           <h4 class="ml-2">Parcours academique</h4>
@@ -92,7 +92,7 @@
       <div class="is-flex is-justify-content-center pl-2 pr-2">
         <hr class="container divider-vertical is-green">
       </div>
-      <div class="column">
+      <div class="column pb-0">
         <div class="is-flex">
           <b-icon pack="fa-solid" type="is-white" icon="wrench"></b-icon>
           <h4 class="ml-2">Compétences</h4>
@@ -110,7 +110,7 @@
           <div class="column mb-0">
             <ListIconsComponent :icons=logosSoftwareCoverage title="Logiciels de tests et de couverture de code" titleicon="code" />
           </div>
-          <div class="column">
+          <div class="column mb-0">
             <ListIconsComponent :icons=logosSysadmin title="Sysadmin" titleicon="terminal" />
           </div>
         </div>
@@ -121,7 +121,7 @@
 
 <script lang="ts">
   import { defineComponent, ref } from "vue";
-  import ListIconsComponent from '/src/components/ListIconsComponent.vue';
+  import ListIconsComponent from '@/../src/components/ListIconsComponent.vue';
 
   export default defineComponent({
     components: {
@@ -137,7 +137,7 @@
         ['php','Php'],
         ['/Icons/mysql-light.svg','Sql'],
         ['dart-lang','Dart'],
-        ['golang','Holang'],
+        ['golang','Golang'],
         ['sass','Sass']
       ])
       const logosFramework = ref([
@@ -176,3 +176,7 @@
     },
   });
 </script>
+
+<style lang="scss">
+@import url('@../../../src/assets/styles/views/tabAProposStyle.scss');
+</style>

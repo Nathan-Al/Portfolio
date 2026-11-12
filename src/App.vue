@@ -5,6 +5,6 @@
 </template>
 
 <script setup lang="ts">
-  import './assets/main.scss'
+  import './assets/mainStyle.scss'
   import MainView from './views/MainView.vue';
 </script>

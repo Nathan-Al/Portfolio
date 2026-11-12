@@ -6,7 +6,7 @@
           <div class="is-flex is-justify-content-center">
             <figure class="image profil-photo">
               <div class="div-decoration-box-shadow"></div>
-              <img src="https://www.thispersondoesnotexist.com" alt="Placeholder image"/>
+              <img src="https://www.thispersondoesnotexist.com/random-person.jpeg" alt="Placeholder image"/>
             </figure>
           </div>
         </div>
@@ -60,7 +60,7 @@
       <div class="slider mt-1">
         <div class="slide-track is-flex is-flex-direction-row">
           <div v-for="(item, key) in logosCarroussel" class="slide is-flex is-justify-content-center" v-bind:key>
-            <a v-if="!item[0].includes('/')" :href=item[1]><b-icon size="is-medium" pack="fa-brands" type="is-white" :icon=item[0]></b-icon></a>
+            <a v-if="!item[0]!.includes('/')" :href=item[1]><b-icon size="is-medium" pack="fa-brands" type="is-white" :icon=item[0]></b-icon></a>
             <figure v-else class="image is-32x32">
                <a :href=item[1]><img :src=item[0] /></a>
             </figure>
@@ -68,7 +68,7 @@
         </div>
         <div aria-hidden class="slide-track is-flex is-flex-direction-row">
           <div v-for="(item, key) in logosCarroussel" class="slide is-flex is-justify-content-center" v-bind:key>
-            <a v-if="!item[0].includes('/')" :href=item[1]><b-icon size="is-medium" pack="fa-brands" type="is-white" :icon=item[0]></b-icon></a>
+            <a v-if="!item[0]!.includes('/')" :href=item[1]><b-icon size="is-medium" pack="fa-brands" type="is-white" :icon=item[0]></b-icon></a>
             <figure v-else class="image is-32x32">
               <a :href=item[1]><img :src=item[0] /></a>
             </figure>
@@ -99,7 +99,3 @@
       },
   });
 </script>
-
-<style scoped>
-
-</style>

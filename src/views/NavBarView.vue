@@ -10,9 +10,6 @@
         <b-tab-item class="main-tab-content" label="Modélisation et animations">
           <ModelisationEtAnimation />
         </b-tab-item>
-        <b-tab-item class="main-tab-content" label="Projets d'écriture">
-          <ProjEcriture/>
-        </b-tab-item>
     </b-tabs>
   </div>
 </template>
@@ -21,14 +18,12 @@
   import { defineComponent } from "vue";
   import APropos from '@/views/tabs/AProposTabView.vue'
   import TravauxEtProjet from '@/views/tabs/TravEtProjTabView.vue'
-  import ProjEcriture from '@/views/tabs/ProjetEcritureTabView.vue'
   import ModelisationEtAnimation from "@/views/tabs/ModelisationEtAnimationTabView.vue";
 
   export default defineComponent({
       components: {
           APropos,
           TravauxEtProjet,
-          ProjEcriture,
           ModelisationEtAnimation
       },
       data() {
@@ -38,7 +33,3 @@
       },
   });
 </script>
-
-<style scoped>
-
-</style>
